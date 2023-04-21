@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * nfa_gin.theme
+ */
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function nfa_gin_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $current_suggestions = $suggestions;
+    $suggestions[] = 'page__' . $node->bundle();
+    foreach($current_suggestions as $suggestion) {
+      $suggestions[] = $suggestion . '__' . $node->bundle();
+    }
+  }
+}
