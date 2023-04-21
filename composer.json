@@ -1,0 +1,6 @@
+{
+  "name": "national-forestry-authority/nfa_gin",
+  "description": "Gin sub-theme for NFA websites",
+  "type": "drupal-theme",
+  "license": "GPL-2.0-or-later"
+}
