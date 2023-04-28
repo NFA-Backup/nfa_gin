@@ -219,7 +219,19 @@
   color: var(--colorGinButtonText);
 }
 
-div[id^=monthpicker_] {
-  background-color: white;
+td > .button {
+  margin: 0;
+}
+
+.views-exposed-form form {
+  display: flex;
+}
+
+.views-exposed-form .form-datetime-wrapper {
+  margin-top: .75rem;
+}
+
+.views-exposed-form .form-datetime-wrapper .form-item--no-label {
+  margin-top: .125em;
 }
 
