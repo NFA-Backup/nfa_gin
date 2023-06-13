@@ -2,3 +2,8 @@ nfa_gin:
   css:
     theme:
       dist/css/base/nfa_gin.css: { minified: false }
+
+nfa_landing:
+  css:
+    theme:
+      dist/css/components/nfa_landing.css: { minified: false }

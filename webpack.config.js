@@ -14,6 +14,8 @@ module.exports = {
     // ################################################
     // Base
     'base/nfa_gin': ['./styles/nfa_gin.scss'],
+    // Components
+    'components/nfa_landing': ['./styles/components/nfa_landing.scss'],
   },
   output: {
     filename: 'js/[name].js',
@@ -112,6 +114,8 @@ module.exports = {
               additionalData: `
                 @use "sass:color";
                 @use "sass:math";
+                @import "./styles/helpers/_mq.scss";
+                @import "./styles/helpers/_vars.scss";
               `,
             },
           },

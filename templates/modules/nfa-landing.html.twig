@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Default implementation of the NFA landing page. Basic elements are
+ * displayed here. Styling is intended to be done in a theme override template.
+ *
+ * Available variables:
+ * - message: The welcome message defined in the module settings page.
+ * - site_links: Links to the other NFA websites.
+ * - env_link: Link to another environment of the current active site.
+ * - active_env: Environment indicator data, including:
+ *   - name: The name of the active environment.
+ *   - bg_color: The background color of the environment.
+ *   - fg_color: The foreground color of the environment.
+ * - login_link: Link to the login page.
+
+ * @see template_preprocess_taxonomy_term()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="login button">{{ login_link }}</div>
+
+<h3>{{ message }}</h3>
+<div class="site-links">
+  {% for site_link in site_links %}
+    <div class="site-link">{{ site_link }}</div>
+  {% endfor %}
+</div>
+
+<div class="environment-indicator" style="background-color: {{ active_env.bg_color }}; color: {{ active_env.fg_color }}">{{ active_env.name }}</div>
+
+<div class="environment-switcher marquee">
+  <div class="marquee-inner">
+    <div class="marquee-content">
+      <a target="_blank" href="{{ env_link['#url'] }}" class="marquee-link">
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+        <div class="marquee-text">{{ env_link['#title'] }} <span class="marquee-dot">•</span></div>
+      </a>
+    </div>
+  </div>
+</div>
