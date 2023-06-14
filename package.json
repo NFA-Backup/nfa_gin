@@ -1,6 +1,6 @@
 {
   "name": "nfa_gin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Frontend build tools",
   "scripts": {
     "start": "npm run dev",

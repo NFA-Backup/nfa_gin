@@ -1,6 +1,7 @@
 .nfa-landing {
   display: flex;
   width: 100%;
+  height: 100vh;
 
   .landing-toolbar {
     padding-top: var(--gin-spacing-m);
@@ -32,6 +33,7 @@
 
     h3 {
       font-weight: var(--gin-font-weight-heavy);
+      margin-bottom: var(--gin-spacing-xxl);
     }
 
     .site-links {
@@ -80,7 +82,7 @@
       position: relative;
       display: flex;
       flex-basis: 40%;
-      opacity: 50%;
+      background-color: #042904;
     }
 
     img {
@@ -90,6 +92,7 @@
       width: 100%;
       height: 100vh;
       object-fit: cover;
+      mix-blend-mode: luminosity;
     }
   }
 }
@@ -149,7 +152,7 @@
 }
 
 .marquee-text {
-  margin: 0 0 0 2vw;
+  margin: 0 0 0 5vw;
   padding-top: 0.5vw;
   font-size: var(--gin-font-size-l);
   font-weight: var(--gin-font-weight-heavy);
@@ -158,7 +161,7 @@
 }
 
 .marquee-dot {
-  padding-left: 2vw;
+  padding-left: 5vw;
 }
 
 @keyframes marquee {

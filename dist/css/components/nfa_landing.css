@@ -1,6 +1,7 @@
 .nfa-landing {
   display: flex;
   width: 100%;
+  height: 100vh;
 }
 
 .nfa-landing .landing-toolbar {
@@ -43,6 +44,7 @@
 
 .nfa-landing .content h3 {
   font-weight: var(--gin-font-weight-heavy);
+  margin-bottom: var(--gin-spacing-xxl);
 }
 
 .nfa-landing .content .site-links .site-link {
@@ -115,7 +117,7 @@
     position: relative;
     display: flex;
     flex-basis: 40%;
-    opacity: 50%;
+    background-color: #042904;
   }
 }
 
@@ -126,6 +128,7 @@
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  mix-blend-mode: luminosity;
 }
 
 [dir="ltr"] .nfa-landing .wallpaper img {
@@ -213,19 +216,19 @@
 }
 
 [dir="ltr"] .marquee-text {
-  margin: 0 0 0 2vw;
+  margin: 0 0 0 5vw;
 }
 
 [dir="rtl"] .marquee-text {
-  margin: 0 2vw 0 0;
+  margin: 0 5vw 0 0;
 }
 
 [dir="ltr"] .marquee-dot {
-  padding-left: 2vw;
+  padding-left: 5vw;
 }
 
 [dir="rtl"] .marquee-dot {
-  padding-right: 2vw;
+  padding-right: 5vw;
 }
 
 @keyframes marquee {
