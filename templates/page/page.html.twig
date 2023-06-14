@@ -23,14 +23,22 @@
       <div class="landing-toolbar">
         <div class="site-logo"><img src="{{ directory ~ '/logo.svg' }}" width="220px" /></div>
       </div>
-      <h1>{{ page.header.nfa_gin_page_title }}</h1>
-      {{ page.content }}
+
+      {% block page_title %}
+        <h1>{{ page.header.nfa_gin_page_title }}</h1>
+      {% endblock %}
+
+      {% block page_content %}
+        {{ page.content }}
+      {% endblock %}
     </div>
-    {% if landing_image %}
-      <div class="wallpaper">
-        <img src="{{ landing_image }}" alt="" />
-      </div>
-    {% endif %}
+    {% block landing_image %}
+      {% if landing_image %}
+        <div class="wallpaper">
+          <img src="{{ landing_image }}" alt="" />
+        </div>
+      {% endif %}
+    {% endblock %}
   </div>
 {% else %}
   {% include '@gin/page/page.html.twig' %}

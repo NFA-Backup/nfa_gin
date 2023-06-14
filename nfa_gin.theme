@@ -12,7 +12,7 @@ function nfa_gin_theme_suggestions_page_alter(&$suggestions, $variables) {
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
     $current_suggestions = $suggestions;
     $suggestions[] = 'page__' . $node->bundle();
-    foreach($current_suggestions as $suggestion) {
+    foreach ($current_suggestions as $suggestion) {
       $suggestions[] = $suggestion . '__' . $node->bundle();
     }
   }
