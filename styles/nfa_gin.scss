@@ -72,8 +72,11 @@ td {
 }
 
 // A Gin change added a 240px bottom margin to views tables that makes some forms unusable because you have to scroll
-// down to find the action buttons. https://www.drupal.org/project/gin/issues/3278745
-.gin-table-scroll-wrapper {
-  margin-bottom: 0;
-  padding-bottom: 0;
+// down to find the action buttons. https://www.drupal.org/project/gin/issues/3278745. Remove the padding from
+// entity browser forms.
+.entity-browser-form {
+  .gin-table-scroll-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
