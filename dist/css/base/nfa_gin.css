@@ -235,3 +235,8 @@ td > .button {
   margin-top: .125em;
 }
 
+.gin-table-scroll-wrapper {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
