@@ -80,3 +80,35 @@ td {
     padding-bottom: 0 !important;
   }
 }
+
+// Field displays.
+.pill-wrapper .details-wrapper {
+  display: flex;
+
+  .pill:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+.pill {
+  font-size: var(--gin-font-size-s);
+  font-weight: var(--gin-font-weight-semibold);
+  padding: calc(var(--gin-spacing-m) - 2px) calc(var(--gin-spacing-l) - 2px);
+  border: 2px solid var(--gin-color-primary) !important;
+  border-radius: var(--gin-border-m);
+  box-shadow: 0 1px 2px var(--gin-color-primary-light);
+  display: inline-block;
+
+  @include mq(wide) {
+    font-size: var(--gin-font-size);
+  }
+
+  &.inline {
+    .field__items {
+      display: flex;
+      .field__item:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+
+  }
+}
