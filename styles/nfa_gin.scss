@@ -110,3 +110,9 @@ td {
 
   }
 }
+
+// Vertical tabs.
+.vertical-tabs__panes > details {
+  border: none;
+  margin: 0;
+}

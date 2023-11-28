@@ -280,3 +280,8 @@ td > .button {
   margin-left: 5px;
 }
 
+.vertical-tabs__panes > details {
+  border: none;
+  margin: 0;
+}
+
