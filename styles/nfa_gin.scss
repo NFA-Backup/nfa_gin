@@ -116,3 +116,16 @@ td {
   border: none;
   margin: 0;
 }
+
+// Off canvas form overrides.
+#drupal-off-canvas {
+  .layout-node-form {
+    display: block;
+    .layout-node-form__actions {
+      display: block;
+    }
+    .meta-sidebar__trigger {
+      display: none;
+    }
+  }
+}
