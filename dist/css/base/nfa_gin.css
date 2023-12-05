@@ -285,3 +285,15 @@ td > .button {
   margin: 0;
 }
 
+#drupal-off-canvas .layout-node-form {
+  display: block;
+}
+
+#drupal-off-canvas .layout-node-form .layout-node-form__actions {
+  display: block;
+}
+
+#drupal-off-canvas .layout-node-form .meta-sidebar__trigger {
+  display: none;
+}
+
